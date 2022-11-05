@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(204, 43%, 93%);
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    width: 650px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    border-radius: 10px;
+}
+.whitespace-container {
+    padding: 2.5rem;
+}
+.top-container {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+}
+h1 {
+    color: hsl(179, 62%, 43%);
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+.sub-text {
+    color:hsl(71, 73%, 54%);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.top-container-text {
+    color:hsl(218, 22%, 67%);
+    line-height: 1.5rem;
+}
+
+h3 {
+    color: white;
+    margin-bottom: 1.2rem;
+    font-weight: 400;
+}
+.subscription-container {
+    grid-column: 1 / 2;
+    grid-row: 2 / -1;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgba(42,178,175,0.8) 0%, rgba(42,178,175,1) 100%);
+    border-radius: 0px 0px 0px 10px;
+    color: white;
+}
+.price-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.per-month {
+    color:hsl(204, 43%, 93%);
+}
+.price-tag {
+    font-size: 2rem;
+    margin-top: 0;
+    font-weight: 600;
+    color: white;
+    margin-right: 1rem;
+}
+button {
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    padding: 1rem 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    box-shadow: 1px 5px 18px 0px rgba(0,0,0,0.2);
+    margin-top: 2rem;
+}
+
+.info-container {
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+    background: linear-gradient(90deg, rgba(42,178,175,0.8) 0%, rgba(42,178,175,1) 100%);
+    border-radius: 0px 0px 10px 0px;
+}
+.info-container p {
+    color: hsl(204, 43%, 93%);
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+}
+@media (max-width: 375px) {
+    .body {
+        height:min-content;
+    }
+    .whitespace-container {
+        padding: 1.5rem;
+    }
+    .top-container p {
+        font-size: 0.9rem;
+    }
+    .container {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+    }
+    .info-container {
+        border-radius: 0px 0px 10px 10px;
+        background: linear-gradient(135deg, rgba(42,178,175,0.8) 0%, rgba(42,178,175,1) 100%);
+    }
+    .subscription-container {
+        border-radius: 0px;
+        background: linear-gradient(135deg, rgba(42,178,175,0.8) 0%, rgba(42,178,175,1) 100%);
+    }
+
+}
+    
